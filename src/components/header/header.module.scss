@@ -8,10 +8,27 @@
     background-color: rgba(0, 0, 0, 0.308);
     min-height: 50px;
     a{
-        color: #ffffff;
         font-weight: 600;
         font-size: 20px;
-    } 
+        text-decoration: none !important;
+        color: white !important;
+            &:visited{
+              text-decoration: none;
+              color: white;
+            }
+            &:hover{
+              text-decoration: none;
+              color: white;
+            }
+            &:focus{
+              text-decoration: none;
+              color: white;
+            }
+            &:active{
+              text-decoration: none;
+              color: white;
+            }
+        }
     ul{
         list-style-type: none;
         width: 30vw;
