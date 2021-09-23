@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 *{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -28,6 +30,13 @@ font-weight: 500;
 line-height: 24px;
 }
 
+h3{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  }
+
 p{
 font-size: 16px;
 font-style: normal;
@@ -42,3 +51,26 @@ button{
 input[type=text], input[type=button], input[type=submit], select, button {
     -webkit-appearance: none;
 }
+
+a{
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none !important;
+  color: $textColor !important;
+      &:visited{
+        text-decoration: none;
+        color: $textColor;
+      }
+      &:hover{
+        text-decoration: none;
+        color: $textColor;
+      }
+      &:focus{
+        text-decoration: none;
+        color: $textColor;
+      }
+      &:active{
+        text-decoration: none;
+        color: $textColor;
+      }
+  }

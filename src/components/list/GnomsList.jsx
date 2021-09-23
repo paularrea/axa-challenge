@@ -1,43 +1,44 @@
 import React, { useState, useContext, useEffect } from "react";
 import { ContextData } from "../../ContextData";
-import { Link } from "react-router-dom";
-// import useInfiniteScroll from "../../hooks/useInfiniteScroll";
+import GnomeCard from "./gnomeCard/gnomeCard";
+import {container} from "./list.module.scss"
+import { Grid, Row, Col } from "react-flexbox-grid";
 
 const GnomsList = () => {
-  //   const [listItems, setListItems] = useState(
-  //     Array.from(Array(50).keys(), (n) => n + 1)
-  //   );
-  //   const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
-  const [gnoms, setGnoms] = useState();
+  const [gnomes, setGnomes] = useState();
   const { data } = useContext(ContextData);
 
-  const gnomData = data && data.Brastlewark;
+  const gnomeData = data && data.Brastlewark;
 
   useEffect(() => {
-    setGnoms(gnomData);
-  }, [gnomData]);
-
-  //   function fetchMoreListItems() {
-  //     setTimeout(() => {
-  //       setListItems((prevState) => [
-  //         ...prevState,
-  //         ...Array.from(Array(20).keys(), (n) => n + prevState.length + 1),
-  //       ]);
-  //       setIsFetching(false);
-  //     }, 2000);
-  //   }
+    setGnomes(gnomeData);
+  }, [gnomeData]);
 
   return (
-    <>
-      <ul>
-        {gnoms &&
-          gnoms.map((gnom) => (
-            <Link key={gnom.id} to={`/population/${gnom.id}`}>{gnom.name}</Link>
-            // <p>{gnom.name}</p>
+    <div className={container}>
+      <span>Brastlewark</span>
+      <h2>Gnome population</h2>
+      <Grid>
+        <Row>
+          {gnomes && gnomes.map((gnome) => (
+            <Col
+              style={{
+                display: "flex",
+                jusifyContent: "center",
+                alignItems: "center",
+              }}
+              md={4}
+              sm={12}
+              xs={12}
+            >
+              <div>
+                <GnomeCard gnome={gnome} />
+              </div>
+            </Col>
           ))}
-      </ul>
-      {/* {isFetching && "Fetching more list items..."} */}
-    </>
+        </Row>
+      </Grid>
+    </div>
   );
 };
 

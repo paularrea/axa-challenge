@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.container{
+    padding-top: 14vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        color: $gray;
+    }
+}
+
+@media (min-width: 700px) {
+    .container{
+        padding-top: 16vh;
+    } 
+}
