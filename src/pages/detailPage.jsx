@@ -1,11 +1,19 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { ContextData } from "../ContextData";
+import { getData } from "../redux/ducks/data";
 import { container, text, info_box } from "../styles/pageDetail.module.scss";
 
 const DetailPage = () => {
   const { gnomId } = useParams();
-  const { data } = useContext(ContextData);
+  const dispatch = useDispatch();
+
+  const data = useSelector((state) => state.data.data);
+
+  useEffect(() => {
+    dispatch(getData());
+  }, [dispatch]);
+
   const gnomData = data && data.Brastlewark;
   const gnom =
     gnomData && gnomData.find((gnom) => JSON.stringify(gnom.id) === gnomId);
