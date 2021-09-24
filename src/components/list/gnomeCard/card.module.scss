@@ -5,6 +5,7 @@
    align-items: center;
    justify-content: center;
     img{
+        border-radius: 10px;
         object-fit:cover;
         width: 100%;
         min-width: 96vw;
@@ -16,7 +17,7 @@
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
     .container{
         filter: brightness(100%);
         transition: all .2s ease-in-out;
