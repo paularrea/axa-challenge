@@ -8,6 +8,6 @@ export function* handleGetData(action) {
     const { data } = response;
     yield put(setData(data));
   } catch (error) {
-    console.log(error);
+    console.log(error, 'handler err');
   }
 }
