@@ -3,17 +3,20 @@
     height: calc(100vh - 10vh);
     display: flex;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem 5vw;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     .text{
         width: 90vw;
         h1{
-            font-weight: 900;
-            font-size: 30px;
-            line-height: 45px;
-            color: black;
+            margin-bottom: 1rem;
+        }
+        h2{
+            margin: 0 auto;
+            color: gray;
+            font-weight: 300;
+            max-width:100%
         }
         a{
             margin-top: 3rem;
@@ -23,14 +26,14 @@
 
 @media (min-width: 750px) {
     .container{
-        padding: 10vh 0;
+        padding: 10vh 5vw;
         .text{
             width: 70vw;
             h1{
-                font-weight: 900;
-                font-size: 50px;
-                line-height: 65px;
                 color: black;
+            }
+            h2{
+                max-width:80%
             }
             a{
                 margin-top: 3rem;

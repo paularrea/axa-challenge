@@ -8,9 +8,12 @@ const Banner = () => {
       <div className={text}>
         <h1>
           Hey AXA heroes! <br /> I know you just arrived to Brastlewark and
-          there's no time to waste! In this app you'll find relevant information
-          of all these little fellas that you will find in this town.
+          there's no time to waste!
         </h1>
+        <h2>
+          In this app you'll find relevant information of all these little
+          fellas that you will find in this town.
+        </h2>
       </div>
       <div className={button}>
         <Button path="/population">See Gnomes population</Button>

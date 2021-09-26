@@ -22,18 +22,20 @@ const FiltrationList = () => {
 
   const list = [
     {
-      title: "Danger!",
+      title: "Danger",
       text:
-        " Be careful with these types of gnomes. Here you can picture some of them. These guys seem normal but they are not trustworthy. You will distinguish them by their red hair.",
+        " Be careful with these types of gnomes. These guys seem normal but they are not trustworthy. You will distinguish them by their red hair. Here you can picture some of them.",
       gnomeFiltration: someRedHair,
-      bgColor: "#ff634741",
+      textColor: "red",
+      bgColor: "white"
     },
     {
       title: "Take care of the old ones",
       text:
-        "The ancient gnomes are very rare to see. They hide themselfs very well but show you some of them.",
+        "The ancient gnomes are very rare to see. They hide themselfs very well but we are here to show you some of them.",
       gnomeFiltration: someOldGnomes,
-      bgColor: "#105f102a",
+      textColor: "green",
+      bgColor: "whitesmoke"
     },
   ];
 
@@ -45,6 +47,7 @@ const FiltrationList = () => {
             title={filtration.title}
             text={filtration.text}
             gnomeFiltration={filtration.gnomeFiltration}
+            textColor={filtration.textColor}
             bgColor={filtration.bgColor}
           />
         ))}

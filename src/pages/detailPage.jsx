@@ -12,6 +12,7 @@ const DetailPage = () => {
 
   useEffect(() => {
     dispatch(getData());
+    window.scrollTo(0, 0);
   }, [dispatch]);
 
   const gnomData = data && data.Brastlewark;

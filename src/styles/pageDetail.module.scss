@@ -16,7 +16,7 @@
         img{
             object-fit: cover;
             width: 100%;
-            height: 100%;
+            height: 400px;
         }
     }
     .text{
@@ -33,6 +33,9 @@
         height: 100vh;
         section{
             width: 50%;
+            img{
+                height: 100%;
+            }
         }
         .text{
             padding: 3vw;

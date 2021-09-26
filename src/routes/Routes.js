@@ -5,6 +5,7 @@ import Home from "../pages/home";
 import Layout from "../components/layout/layout";
 import Population from "../pages/population";
 import DetailPage from "../pages/detailPage";
+import Statistics from "../pages/statistics";
 
 const Routes = () => {
   return (
@@ -13,6 +14,7 @@ const Routes = () => {
           <RouteWrapper exact path="/" component={Home} layout={Layout} />
           <RouteWrapper exact path="/population" component={Population} layout={Layout} />
           <RouteWrapper path="/population/:gnomId" component={DetailPage} layout={Layout} />
+          <RouteWrapper exact path="/statistics" component={Statistics} layout={Layout} />
         </Switch>
     </BrowserRouter>
   );

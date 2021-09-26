@@ -1,25 +1,32 @@
-
 #page-wrap {
   text-align: center;
-  overflow: auto;
   top: 15%;
   position: relative;
 }
-
+.bm-menu{
+  height: 100vh !important;
+  overflow: hidden !important;
+}
 .bm-item {
   display: flex !important;
   flex-direction: column !important;
+  overflow: hidden !important;
   height: min-content;
   text-decoration: none;
   margin-bottom: 10px;
   color: #d1d1d1;
   transition: color 0.2s;
+  width: 100% !important;
 }
 
 .bm-item a{
   padding-bottom: .5rem;
   font-size: 30px;
   font-weight: 400;
+}
+
+.bm-item li{
+  margin-bottom: 2rem;
 }
 
 .bm-item:hover {

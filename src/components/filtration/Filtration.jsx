@@ -7,10 +7,10 @@ const Filtration = (props) => {
   return (
     <div style={{ backgroundColor: props.bgColor }} className={container}>
       <div className={text_box}>
-        <h2>{props.title}</h2>
+        <h2 style={{ color: props.textColor }}>{props.title}</h2>
         <p>{props.text}</p>
         <br />
-        <p><b>Swip left to see more!</b></p>
+        <span>Swip left to see more!</span>
       </div>
 
       <section className={flex}>
