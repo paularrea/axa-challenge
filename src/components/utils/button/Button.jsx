@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { button } from "./button.module.scss";
 
 const Button = (props) => {
   return (
-    <Link className={button} to={props.path}>
+    <a data-testid="button" className={button} href={props.path}>
       {props.children}
-    </Link>
+    </a>
   );
 };
 

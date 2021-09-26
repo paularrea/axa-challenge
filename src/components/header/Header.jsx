@@ -2,7 +2,7 @@ import React from "react";
 import Burger from "./components/burger";
 import MediaQuery from "react-responsive";
 import { NavLink } from "react-router-dom";
-import { navbar, abs_title, active } from "./header.module.scss";
+import { navbar, abs_title } from "./header.module.scss";
 import { MenuLinks } from "./components/MenuLinks";
 import "./components/burger.css";
 

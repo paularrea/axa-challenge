@@ -14,7 +14,7 @@ const initialState = {
   data: undefined
 };
 
-export default (state = initialState, action) => {
+const data = (state = initialState, action) => {
   switch (action.type) {
     case SET_DATA:
       const { data } = action;
@@ -23,3 +23,5 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+export default data;
