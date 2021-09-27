@@ -61,7 +61,7 @@ const GnomAgeBarChart = ({ gnomes }) => {
               dataKey="name"
               scale="point"
               label={{
-                value: "Gnome population",
+                value: "Year range",
                 position: "center",
                 dy: 50,
               }}
@@ -70,7 +70,7 @@ const GnomAgeBarChart = ({ gnomes }) => {
             />
             <YAxis
               label={{
-                value: "Years",
+                value: "Number of gnomes",
                 angle: -90,
                 position: "center",
                 dx: -50,

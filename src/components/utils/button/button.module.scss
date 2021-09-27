@@ -14,3 +14,9 @@
         box-shadow: 0px 4px 40px #E1E5EC;
     }
 }
+
+@media (max-width: 350px) {
+    .button{
+        padding: 1rem;
+    }
+}
