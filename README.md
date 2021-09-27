@@ -7,7 +7,7 @@ I hope you like it!
 
 ## FEATURES
 
-This is a mobile first app made with React hooks and SASS.
+This is a mobile first app made with React hooks and SASS. Redux and its middleware Redux saga have been used in the project to manage state operations.
 
 ### Home page
 
